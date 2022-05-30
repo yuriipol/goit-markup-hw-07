@@ -8,7 +8,6 @@
 
 body {
   margin: 0;
-  /* padding-top: 80px; */
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -49,7 +48,7 @@ body {
   text-align: center;
 }
 /*style header*/
-.header {
+.page-header-style {
   display: flex;
   align-items: center;
 }
@@ -70,9 +69,7 @@ body {
 }
 .logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+
   /* outline: 2px solid tomato; */
   color: var(--primary-text-color);
   text-decoration: none;
@@ -81,7 +78,12 @@ body {
   font-size: 26px;
   line-height: 1.19;
 }
-.web {
+.logo-site-nav {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
+.logo__web {
   color: #2196f3;
 }
 /*style menu-nav*/
@@ -89,10 +91,10 @@ body {
   display: flex;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.site-nav .link {
+.site-nav__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -111,7 +113,7 @@ body {
 .site-nav .link.current {
   color: var(--accent-color);
 }
-.site-nav .link.current::after {
+.site-nav .current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -141,25 +143,25 @@ body {
 .site-nav .link:focus::after {
   opacity: 1;
 } */
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-color);
 }
 /* Style contacts */
-.contacts.list {
+.contacts {
   display: flex;
   margin-left: auto;
 }
-.contacts.list .contacts.item + .contacts.item {
+.contacts .contacts__item + .contacts__item {
   margin-left: 50px;
 }
-.mail,
-.tel {
+.contacts__mail,
+.contacts__tel {
   display: flex;
   align-items: center;
 }
 /* Добавление иконок */
-.icon-mail {
+.contacts__icon-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -168,7 +170,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-tel {
+.contacts__icon-tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -203,7 +205,7 @@ body {
 
 /* Конец добавление иконок */
 
-.contacts.list .mail {
+.contacts .contacts__mail {
   /* outline: 2px solid tomato; */
   padding-top: 32px;
   padding-bottom: 32px;
@@ -217,7 +219,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts.list .tel {
+.contacts .contacts__tel {
   /* outline: 2px solid tomato; */
   padding-top: 32px;
   padding-bottom: 32px;
@@ -231,20 +233,20 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts.list .mail:hover .icon-mail,
-.contacts.list .mail:focus .icon-mail {
+.contacts .contacts__mail:hover .contacts__icon-mail,
+.contacts .contacts__mail:focus .contacts__icon-mail {
   fill: var(--accent-color);
 }
-.contacts.list .mail:hover,
-.contacts.list .mail:focus {
+.contacts .contacts__mail:hover,
+.contacts .contacts__mail:focus {
   color: var(--accent-color);
 }
-.contacts.list .tel:hover .icon-tel,
-.contacts.list .tel:focus .icon-tel {
+.contacts .contacts__tel:hover .contacts__icon-tel,
+.contacts .contacts__tel:focus .contacts__icon-tel {
   fill: var(--accent-color);
 }
-.contacts.list .tel:hover,
-.contacts.list .tel:focus {
+.contacts .contacts__tel:hover,
+.contacts .contacts__tel:focus {
   color: var(--accent-color);
 }
 
@@ -553,14 +555,9 @@ body {
   /* outline: 2px solid tomato; */
 }
 .logo-footer {
-  display: inline-block;
   margin-bottom: 20px;
   color: var(--primary-white-color);
-  text-decoration: none;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+
   /* outline: 2px solid tomato; */
 }
 .adress-post,
