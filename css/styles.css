@@ -550,7 +550,7 @@ body {
   background-color: #2f303a;
   /* outline: 2px solid tomato; */
 }
-.adress {
+.footer-adress {
   font-style: normal;
   /* outline: 2px solid tomato; */
 }
@@ -564,17 +564,17 @@ body {
 .adress.list .mail {
   display: inline-block;
 }
-.adress.list .adress-list-item:not(:last-child) {
+.adress .adress__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.adress.list .adress-post {
+.adress__link {
   color: var(--primary-white-color);
   text-decoration: none;
   line-height: 1.71;
 }
-.adress.list .mail,
-.adress.list .tel {
+.adress__mail,
+.adress__tel {
   color: var(--title-text-color);
   text-decoration: none;
   line-height: 1.71;
@@ -582,12 +582,12 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.adress.list .mail:hover,
-.adress.list .mail:focus {
+.adress__mail:hover,
+.adress__mail:focus {
   color: var(--accent-color);
 }
-.adress.list .tel:hover,
-.adress.list .tel:focus {
+.adress__tel:hover,
+.adress__tel:focus {
   color: var(--accent-color);
 }
 .footer-address-links {
@@ -604,7 +604,7 @@ body {
 .social-links.list {
   display: flex;
 }
-.links-social-icon {
+.social-links__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -617,7 +617,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-list-items:not(:last-child) {
+.social-links__items:not(:last-child) {
   margin-right: 10px;
 }
 .sicial-links-title {
@@ -630,24 +630,24 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-.icon {
+.social-links__icon {
   width: 20px;
   height: 20px;
   fill: var(--primary-white-color);
 }
-.links-social-icon:hover,
-.links-social-icon:focus {
+.social-links__link:hover,
+.social-links__link:focus {
   background-color: var(--accent-color);
 }
 .subscribe {
   margin-left: auto;
 }
-.subscribe-form {
+.footer-subscribe-form {
   display: flex;
   align-items: center;
 }
 
-.subscribe-input {
+.footer-subscribe-form__input {
   width: 358px;
   height: 50px;
   padding: 15px;
@@ -670,7 +670,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscribe-input::placeholder {
+.footer-subscribe-form__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -678,8 +678,8 @@ body {
 
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe-input:hover,
-.subscribe-input:focus {
+.footer-subscribe-form__input:hover,
+.footer-subscribe-form__input:focus {
   border-color: var(--primary-white-color);
 }
 
@@ -706,7 +706,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-send {
+.subscribe-button__icon-send {
   margin-left: 10px;
   width: 24px;
   height: 24px;
