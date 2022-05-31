@@ -26,24 +26,28 @@
       <div class="conteiner page-header-style">
         <!--Name studio-->
         <nav class="site-nav">
-          <a href="./index.html" class="logo logo-site-nav"
+          <a href="./index.html" class="logo logo--position"
             ><span class="logo__web">Web</span>Studio</a
           >
           <!--menu navigation-->
-          <ul class="site-nav list">
+          <ul class="site-nav site-nav--list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link link">Студия</a>
+              <a href="./index.html" class="site-nav__link site-nav__link--link">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link link current">Портфолио</a>
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link--link site-nav__link--current"
+                >Портфолио</a
+              >
             </li>
             <li class="site-nav__item">
-              <a href="" class="site-nav__link link">Контакты</a>
+              <a href="" class="site-nav__link site-nav__link--link">Контакты</a>
             </li>
           </ul>
         </nav>
         <!--mail&Telefone-->
-        <ul class="contacts list">
+        <ul class="contacts contacts--list">
           <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="contacts__mail">
               <svg class="contacts__icon-mail">
@@ -66,28 +70,28 @@
     <main>
       <section class="work-section">
         <div class="conteiner">
-          <h1 class="title visually-hidden">Примеры работ</h1>
+          <h1 class="work-section__title work-section__title--visually-hidden">Примеры работ</h1>
           <ul class="filtr">
             <li class="filtr__item">
-              <button type="button" class="filtr-btn active">Все</button>
+              <button type="button" class="filtr-btn filtr-btn--active">Все</button>
             </li>
             <li class="filtr__item">
-              <button type="button" class="filtr-btn active">Веб-сайты</button>
+              <button type="button" class="filtr-btn filtr-btn--active">Веб-сайты</button>
             </li>
             <li class="filtr__item">
-              <button type="button" class="filtr-btn active">Приложения</button>
+              <button type="button" class="filtr-btn filtr-btn--active">Приложения</button>
             </li>
             <li class="filtr__item">
-              <button type="button" class="filtr-btn active">Дизайн</button>
+              <button type="button" class="filtr-btn filtr-btn--active">Дизайн</button>
             </li>
             <li class="filtr__item">
-              <button type="button" class="filtr-btn active">Маркетинг</button>
+              <button type="button" class="filtr-btn filtr-btn--active">Маркетинг</button>
             </li>
           </ul>
-          <ul class="work-list-pages list">
+          <ul class="work-list-pages work-list-pages--list">
             <li class="work-list-pages__item">
               <a href="" class="work-list-pages__link">
-                <div class="work-link-position">
+                <div class="work-list-pages__work-link-position">
                   <img
                     class="work-list-pages__images"
                     src="./images/p1.jpg"
@@ -100,7 +104,7 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="item-discript">
+                <div class="work-list-pages__item-discript">
                   <h3 class="work-list-pages__work-title">Технокряк</h3>
                   <p class="work-list-pages__work-dicript">Веб-сайт</p>
                 </div>
@@ -108,7 +112,7 @@
             </li>
             <li class="work-list-pages__item">
               <a href="" class="work-list-pages__link">
-                <div class="work-link-position">
+                <div class="work-list-pages__work-link-position">
                   <img
                     class="work-list-pages__images"
                     src="./images/p2.jpg"
@@ -121,7 +125,7 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="item-discript">
+                <div class="work-list-pages__item-discript">
                   <h3 class="work-list-pages__work-title">Постер New Orlean vs Golden Star</h3>
                   <p class="work-list-pages__work-dicript">Дизайн</p>
                 </div>
@@ -129,7 +133,7 @@
             </li>
             <li class="work-list-pages__item">
               <a href="" class="work-list-pages__link">
-                <div class="work-link-position">
+                <div class="work-list-pages__work-link-position">
                   <img
                     class="work-list-pages__images"
                     src="./images/p3.jpg"
@@ -142,7 +146,7 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="item-discript">
+                <div class="work-list-pages__item-discript">
                   <h3 class="work-list-pages__work-title">Ресторан Seafood</h3>
                   <p class="work-list-pages__work-dicript">Приложение</p>
                 </div>
@@ -150,7 +154,7 @@
             </li>
             <li class="work-list-pages__item">
               <a href="" class="work-list-pages__link">
-                <div class="work-link-position">
+                <div class="work-list-pages__work-link-position">
                   <img
                     class="work-list-pages__images"
                     src="./images/p4.jpg"
@@ -163,7 +167,7 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="item-discript">
+                <div class="work-list-pages__item-discript">
                   <h3 class="work-list-pages__work-title">Проект Prime</h3>
                   <p class="work-list-pages__work-dicript">Маркетинг</p>
                 </div>
@@ -171,7 +175,7 @@
             </li>
             <li class="work-list-pages__item">
               <a href="" class="work-list-pages__link">
-                <div class="work-link-position">
+                <div class="work-list-pages__work-link-position">
                   <img
                     class="work-list-pages__images"
                     src="./images/p5.jpg"
@@ -184,7 +188,7 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="item-discript">
+                <div class="work-list-pages__item-discript">
                   <h3 class="work-list-pages__work-title">Проект Boxes</h3>
                   <p class="work-list-pages__work-dicript">Приложение</p>
                 </div>
@@ -192,7 +196,7 @@
             </li>
             <li class="work-list-pages__item">
               <a href="" class="work-list-pages__link">
-                <div class="work-link-position">
+                <div class="work-list-pages__work-link-position">
                   <img
                     class="work-list-pages__images"
                     src="./images/p6.jpg"
@@ -205,7 +209,7 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="item-discript">
+                <div class="work-list-pages__item-discript">
                   <h3 class="work-list-pages__work-title">Inspiration has no Borderк</h3>
                   <p class="work-list-pages__work-dicript">Веб-сайт</p>
                 </div>
@@ -213,7 +217,7 @@
             </li>
             <li class="work-list-pages__item">
               <a href="" class="work-list-pages__link">
-                <div class="work-link-position">
+                <div class="work-list-pages__work-link-position">
                   <img
                     class="work-list-pages__images"
                     src="./images/p7.jpg"
@@ -226,7 +230,7 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="item-discript">
+                <div class="work-list-pages__item-discript">
                   <h3 class="work-list-pages__work-title">Издание Limited Edition</h3>
                   <p class="work-list-pages__work-dicript">Дизайн</p>
                 </div>
@@ -234,7 +238,7 @@
             </li>
             <li class="work-list-pages__item">
               <a href="" class="work-list-pages__link">
-                <div class="work-link-position">
+                <div class="work-list-pages__work-link-position">
                   <img
                     class="work-list-pages__images"
                     src="./images/p8.jpg"
@@ -247,7 +251,7 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="item-discript">
+                <div class="work-list-pages__item-discript">
                   <h3 class="work-list-pages__work-title">Проект LAB</h3>
                   <p class="work-list-pages__work-dicript">Маркетинг</p>
                 </div>
@@ -255,7 +259,7 @@
             </li>
             <li class="work-list-pages__item">
               <a href="" class="work-list-pages__link">
-                <div class="work-link-position">
+                <div class="work-list-pages__work-link-position">
                   <img
                     class="work-list-pages__images"
                     src="./images/p9.jpg"
@@ -268,7 +272,7 @@
                     или частном лице.
                   </p>
                 </div>
-                <div class="item-discript">
+                <div class="work-list-pages__item-discript">
                   <h3 class="work-list-pages__work-title">Growing Business</h3>
                   <p class="work-list-pages__work-dicript">Приложение</p>
                 </div>
@@ -279,15 +283,15 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="conteiner social-icons">
+      <div class="conteiner conteiner--social-icons">
         <div class="footer__logo-address">
           <!--Name studio-->
-          <a href="./index.html" class="logo logo-footer"
+          <a href="./index.html" class="logo logo--footer"
             ><span class="logo__web">Web</span>Studio</a
           >
           <!-- address -->
           <address class="footer-adress">
-            <ul class="adress list">
+            <ul class="adress adress--list">
               <li class="adress__item">
                 <a
                   href="https://goo.gl/maps/HPNhDswtwEFeR7fT9"
@@ -308,7 +312,7 @@
         </div>
         <div class="social-links">
           <h2 class="social-links__title">присоединяйтесь</h2>
-          <ul class="social-links-list list">
+          <ul class="social-links-list social-links-list--list">
             <li class="social-links-list__items">
               <a href="" class="social-links-list__link">
                 <svg class="social-links-list__icon">
