@@ -2,12 +2,6 @@
     display: flex;
 }
 
-.site-nav--list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
 .site-nav__item:not(:last-child) {
     margin-right: 50px;
 }

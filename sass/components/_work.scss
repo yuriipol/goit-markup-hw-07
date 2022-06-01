@@ -1,15 +1,8 @@
-.work--list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.work__img {
-    display: block;
-}
-
 .work {
     display: flex;
+}
+.work__img {
+    display: block;
 }
 
 .work__item:not(:last-child) {

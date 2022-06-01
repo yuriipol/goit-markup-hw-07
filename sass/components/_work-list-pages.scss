@@ -3,18 +3,13 @@
     flex-wrap: wrap;
 }
 
-.work-list-pages--list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
 .work-list-pages__item-discript {
     padding: 20px 24px;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
 }
-.work-list-pages>.work-list-pages__item {
+.work-list-pages > .work-list-pages__item {
     flex-basis: calc((100% - 30px * 3) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
